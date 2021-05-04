@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <title>Pokemon</title>
+
+</head>
+<script>
+
+  $(document).ready(function () {
+
+
+    for (let i = 1; i <= 151; i++) {
+
+      $("#pokemon").append(`<div class="poke col-1"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png"></div>`);
+     
+      
+  
+    }
+  });
+
+
+</script>
+
+<style>
+
+body{
+
+  background: url(https://i.pinimg.com/originals/ab/28/d2/ab28d2453e55fe9b3e8ab5812556c45e.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,111,0.16850490196078427) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+</style>
+
+
+<body>
+
+  <div class="container">
+    
+    <h1 class=" text-center py-3">Pokemon 1er Generacion</h1>
+  
+    <div class="row" id="pokemon">
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+
+</html>
